@@ -1,0 +1,98 @@
+.Chat{
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.date h6{
+    font-size: 14px;
+    color: #B7B7B7;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.date h6::before, .date h6::after{
+    content: '';
+    height: 1px;
+    background-color: #B7B7B7;
+    display: block;
+}
+
+.Chat .messages{
+    display: grid;
+    grid-auto-flow: row;
+    overflow-y: auto;
+    overscroll-behavior-inline: contain;
+    margin-top: 10px;
+    width: 100%;
+    height: 400px;
+    min-height: 400px;
+}
+
+::-webkit-scrollbar{
+    width: 1px;
+}
+
+.messages .message{
+    max-width: 95%;
+    margin: 5px 0;
+    display: flex;
+    gap: 8px;
+}
+
+.profile img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.message .text{
+    color: rgba(0, 0, 0, 0.701);
+    background-color: white;
+    padding: 8px;
+    border-radius: 0 12px 12px 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+}
+
+
+.chat-reply{
+    margin-top: 20px;
+    position: relative;   
+}
+
+.Chat .chat-reply input{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0 5px;
+}
+
+.chat-reply i{
+    cursor: pointer;
+}
+
+.chat-reply .ri-attachment-2{
+    font-weight: 400;
+    position: absolute;
+    top: 3px;
+    right: 50px;
+}
+
+.chat-reply .ri-send-plane-line{
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+/* Responsive Breakpoint 1 */
+
+@media (max-width : 420px){
+    .Chat .messages{
+        height: 550px;
+    }
+}

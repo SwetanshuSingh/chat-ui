@@ -1,0 +1,77 @@
+.ChatScreen{
+    width: 345px;
+    height: 700px;
+    background-color: #FAF9F4;
+    border-radius: 32px;
+    
+}
+
+.trip-details{
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+    color: #141E0D;
+    border-bottom: 1px solid #E5E5E0;
+}
+
+.trip-details .title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+}
+
+.container{
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+}
+
+.container h4,i{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details .img{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.details .text-area{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.details .text-area span{
+    display: block;
+}
+
+.details .text-area span h4{
+    display: inline;
+}
+
+.details .text-area .light{
+    color: #606060;
+    font-weight: 500;
+}
+
+
+/* Responsive Breakpoint 1 */
+
+@media (max-width : 420px){
+    .ChatScreen{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+}
